@@ -1,0 +1,44 @@
+{
+    "[cpp]": {
+      "editor.formatOnType": false,
+      "editor.formatOnSave": false,
+      "editor.insertSpaces": true,
+      "editor.detectIndentation": true,
+      "editor.tabSize": 4
+    },
+    "clang.executable" : "C:\\Program Files\\LLVM\\bin\\clang.exe",
+    "clang.cxxflags": [
+      "-std=c++17",
+      "-IC:\\MinGW\\include",
+      "-IC:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include",
+      "-IC:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include\\c++",
+      "-I${workspaceRoot}\\include",
+      "-I${cwd}",
+      "--target=x86_64-w64-mingw",
+      "-Wall"
+    ],
+    "clang.cflags":[
+      "-std=c99",
+      "-IC:\\MinGW\\include",
+      "-IC:\\MinGW\\lib\\gcc\\mingw32\\6.3.0\\include",
+      "-I${workspaceRoot}\\include",
+      "-I${cwd}"
+    ],
+    "code-runner.executorMap" : {
+    // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    "cpp": "cd $dir && g++ '$fileName' -o '$fileNameWithoutExt.exe' -g -O2 -std=c++17 && &'$dir$fileNameWithoutExt'"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.preserveFocus": false,
+    //"clang.completion.enable":true,
+    "C_Cpp.errorSquiggles": "disabled",
+    
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "files.associations": {
+      "iostream": "cpp",
+      "deque": "cpp",
+      "string": "cpp",
+      "vector": "cpp",
+      "iosfwd": "cpp"
+    }
+}
