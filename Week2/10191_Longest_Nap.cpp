@@ -1,3 +1,8 @@
+/*
+
+把時間當成線段，算線段覆蓋，順便算答案，總之是用貪心
+
+*/
 #include <bits/stdc++.h>
 
 #define PII pair<int, int>
