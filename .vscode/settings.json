@@ -39,6 +39,8 @@
       "deque": "cpp",
       "string": "cpp",
       "vector": "cpp",
-      "iosfwd": "cpp"
+      "iosfwd": "cpp",
+      "*.tcc": "cpp",
+      "cmath": "cpp"
     }
 }
