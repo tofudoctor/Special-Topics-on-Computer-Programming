@@ -41,6 +41,7 @@
       "vector": "cpp",
       "iosfwd": "cpp",
       "*.tcc": "cpp",
-      "cmath": "cpp"
+      "cmath": "cpp",
+      "complex": "cpp"
     }
 }
